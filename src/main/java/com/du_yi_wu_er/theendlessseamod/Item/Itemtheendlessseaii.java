@@ -18,3 +18,4 @@ public class Itemtheendlessseaii extends Item {
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack stack) { return true;}
 }
+// 666
