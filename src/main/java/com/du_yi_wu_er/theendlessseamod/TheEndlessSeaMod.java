@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 @Mod(modid = TheEndlessSeaMod.MODID, name = TheEndlessSeaMod.NAME, version = TheEndlessSeaMod.VERSION, acceptableRemoteVersions = TheEndlessSeaMod.acceptedMinecraftVersions)
 public class TheEndlessSeaMod {
 

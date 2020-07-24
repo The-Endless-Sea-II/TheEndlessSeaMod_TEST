@@ -24,7 +24,6 @@ public class ItemLoader {
     public static Item false_shovel = new Toolfalseshovel("false_shovel");
     public static Item false_hoe = new Toolfalsehoe("false_hoe");
 
-
     //block 物品方块注册
     public static void Blockitem(){
         //registeritemblock(BlockLoader.Block name);
