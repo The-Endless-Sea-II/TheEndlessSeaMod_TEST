@@ -27,16 +27,15 @@ public class Itemquartzprocessor extends Item {
 
     }
 
-    @Override
-    public String getUnlocalizedName(ItemStack stack) {
-        for (int i = 0; i < Quartzprocessortypes.values().length; i++){
+    public String getUnlocalizedName(ItemStack stack, int i) {
+        for (i = 0; i < Quartzprocessortypes.values().length; i++){
             if (stack.getItemDamage() == i){
                 return this.getUnlocalizedName() + "." + Quartzprocessortypes.values()[i].getName();
             }else {
                 continue;
             }
         }
-        return this.getUnlocalizedName() + "." + Quartzprocessortypes.quartz_processor_press.getName();
+        return this.getUnlocalizedName() + "." + Quartzprocessortypes.values()[i].getName();
     }
 
     public enum Quartzprocessortypes implements IStringSerializable {
