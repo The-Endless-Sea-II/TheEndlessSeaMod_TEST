@@ -35,6 +35,7 @@ public class TheEndlessSeaMod {
     public void preInit (FMLPreInitializationEvent event)
     {
         proxy.preInit(event);
+        proxy.registerModelBakeryStuff();
     }
 
     @Mod.EventHandler

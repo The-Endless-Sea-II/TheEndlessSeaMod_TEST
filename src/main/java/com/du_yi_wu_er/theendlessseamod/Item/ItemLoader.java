@@ -2,10 +2,13 @@ package com.du_yi_wu_er.theendlessseamod.Item;
 
 import com.du_yi_wu_er.theendlessseamod.Block.BlockLoader;
 import com.du_yi_wu_er.theendlessseamod.Item.Tool.*;
+import com.du_yi_wu_er.theendlessseamod.TheEndlessSeaMod;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
@@ -23,6 +26,8 @@ public class ItemLoader {
     public static Item false_pickaxe = new Toolfalsepickaxe("false_pickaxe");
     public static Item false_shovel = new Toolfalseshovel("false_shovel");
     public static Item false_hoe = new Toolfalsehoe("false_hoe");
+
+    public static Item quartzprocessor = new Itemquartzprocessor("quartzprocessor");
 
     //block 物品方块注册
     public static void Blockitem(){
@@ -45,6 +50,7 @@ public class ItemLoader {
         ForgeRegistries.ITEMS.register(false_pickaxe);
         ForgeRegistries.ITEMS.register(false_shovel);
         ForgeRegistries.ITEMS.register(false_hoe);
+        ForgeRegistries.ITEMS.register(quartzprocessor);
     }
 
     //Block 物品材质加载
@@ -67,11 +73,21 @@ public class ItemLoader {
         regsiterRender(false_pickaxe);
         regsiterRender(false_shovel);
         regsiterRender(false_hoe);
+
+        for (int i = 0; i < Itemquartzprocessor.Quartzprocessortypes.values().length; i++){
+            regsiterRender(quartzprocessor, i, "quartzprocessor_" + Itemquartzprocessor.Quartzprocessortypes.values()[i].getName());
+        }
     }
 
     @SideOnly(Side.CLIENT)
     private static void regsiterRender(Item item) {
         ModelResourceLocation model = new ModelResourceLocation(item.getRegistryName(), "inventory");
         ModelLoader.setCustomModelResourceLocation(item, 0,model);
+    }
+
+    @SideOnly(Side.CLIENT)
+    private static void regsiterRender(Item item, int mate, String name) {
+        ModelResourceLocation model = new ModelResourceLocation(new ResourceLocation(TheEndlessSeaMod.MODID,name), "inventory");
+        ModelLoader.setCustomModelResourceLocation(item, mate, model);
     }
 }
