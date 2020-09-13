@@ -1,19 +1,34 @@
-/Creative Inventory
+//Creative Inventory
 itemGroup.theendlessseamod=The Endless Sea Mod
 
 //Items
 item.theendlessseaii.name=The Endless Sea II
 item.storagefocus.name=StorageFocus
-item.wandunbreakable_port.name=WandunbreakablePort
-item.wandunbreakable_stick.name=WandunbreakableStick
+item.wandunbreakable_port.name=Wandunbreakable Port
+item.wandunbreakable_stick.name=Wandunbreakable Stick
+item.one_borer_essence.name=One Borer Essence
+item.two_borer_essence.name=Two Borer Essence
+item.infused_stick.name=Infused Stick
+item.mana_leather.name=Mana Leather
+#tools
 item.false_sword.name=FalseSword
 item.false_axe.name=FalseAxe
 item.false_pickaxe.name=FalsePickaxe
 item.false_shovel.name=FalseShovel
 item.false_hoe.name=FalseHoe
-
-//Fluids
-fluid.Mercury=Mercury
+#processors
+item.quartz_processor_press.name=Quartz Processor Press
+item.printed_quartz_processor.name=Printed Quartz Processor
+item.redstone_printed_quartz_processor.name=Redstone Printed Quartz Circuit
+item.quartz_processor.name=Quartz Processor
+item.redstone_printed_logic_processor.name=Redstone Printed Logic Circuit
+item.redstone_printed_engineering_processor.name=Redstone Printed Engineering Circuit
+item.redstone_printed_calculation_processor.name=Redstone Printed Calculation Circuit
+item.raw_basic_processor.name=Raw Basic Processor
+item.raw_improved_processor.name=Raw Improved Processor
+item.raw_advanced_processor.name=Raw Advanced Processor
+item.exquisite_construction_core.name=Exquisite Construction Core
+item.exquisite_destruction_core.name=Exquisite Destruction Core
 
 //Blocks
 block.falsegrass.name=FalseGrass
@@ -26,3 +41,10 @@ item.false_axe.1.tooltip=§2This is false§r
 item.false_pickaxe.1.tooltip=§2This is false§r
 item.false_shovel.1.tooltip=§2This is false§r
 item.false_hoe.1.tooltip=§2This is false§r
+
+item.processor_binding.1.tooltip=The item comes from RS (Refined Storage)
+item.raw_basic_processor.1.tooltip=The item comes from RS (Refined Storage)
+item.raw_improved_processor.1.tooltip=The item comes from RS (Refined Storage)
+item.raw_advanced_processor.1.tooltip=The item comes from RS (Refined Storage)
+item.exquisite_construction_core.1.tooltip=The item comes from RS (Refined Storage)
+item.exquisite_destruction_core.1.tooltip=The item comes from RS (Refined Storage)
