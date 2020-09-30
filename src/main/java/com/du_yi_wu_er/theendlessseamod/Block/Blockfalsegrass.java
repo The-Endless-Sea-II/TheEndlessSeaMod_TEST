@@ -18,6 +18,7 @@ public class Blockfalsegrass extends Block {
         this.setUnlocalizedName(nama);
         this.setRegistryName(nama);
         this.setHardness(1F);
+        //黑曜石是50,铁块5,金块3,圆石2,石头1.5,南瓜1,泥土0.5,甘蔗0,基岩-1
         this.setHarvestLevel("pickaxe", 0);
         this.setCreativeTab(Tabtheendlessseamod.tabtheendlessseamod);
     }
