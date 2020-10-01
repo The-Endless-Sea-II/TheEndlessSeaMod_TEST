@@ -8,7 +8,7 @@ import net.minecraft.block.material.Material;
 public class BlockInfusedClayBlock extends Block {
 
     public BlockInfusedClayBlock(String nama, Material minecraft) {
-        super(minecraft.ROCK);
+        super(minecraft.GROUND);
         this.setUnlocalizedName(nama);
         this.setRegistryName(nama);
         this.setHardness(0.5F);
