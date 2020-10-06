@@ -26,7 +26,7 @@ public class BlockInfusedClayBlock extends Block {
     }
 
     public int quantityDropped(Random quantity){
-        return 7 + quantity.nextInt(2);
+        return 7 + quantity.nextInt(3);
     }
 
 }
